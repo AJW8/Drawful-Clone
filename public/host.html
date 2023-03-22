@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Drawful</title>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">	
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/spinkit.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.plugin.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="socket.io/socket.io.js"></script>
+		<script src="js/game/host.js"></script>
+	</head>
+<body>
+	<div align="center">
+		<div id="room_code"></div>
+		<div id="lobby">
+			<div id="lobby_players"></div>
+			<div id="lobby_audience"></div>
+			<div id="start_game">
+				<button id="btn_start_game" class="btn btn-default"></button>
+			</div>
+		</div>
+		<div id="game_start">
+			<div id="game">
+				<div id="game_audience_count"></div>
+				<div id="intro"></div>
+				<div id="draw_prompts">
+					<div><p>Draw the prompt sent to your device!</p></div>
+					<div id="players_drawn"></div>
+				</div>
+				<div><canvas id="prompt_canvas" width="500" height="500"/></div>
+				<div id="current_prompt">
+					<div id="write_title">
+						<div><p>Write a title now!</p></div>
+						<div id="players_written"></div>
+					</div>
+					<div id="guess_title">
+						<div id="show_titles"></div>
+						<div><p>Vote for the actual title now!</p></div>
+						<div id="audience_votes"></div>
+					</div>
+				</div>
+				<div id="current_guess">
+					<div id="all_votes"></div>
+					<div id="show_guess"></div>
+					<div id="show_guess_result"></div>
+				</div>
+				<div id="actual_title"></div>
+				<div id="scores"></div>
+				<div id="winner"></div>
+				<button id="btn_continue" class="btn btn-default">Continue</button>
+			</div>
+			<div id="end">
+				<div id="final_scores"></div>
+				<button id="btn_same_players" class="btn btn-default">Same Players</button>
+				<button id="btn_new_players" class="btn btn-default">New Players</button>
+			</div>
+			<button id="btn_leave_game" class="btn btn-default">Leave Game</button>
+		</div>
+	</div>
+</body>
+</html>

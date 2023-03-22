@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Drawful</title>
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">	
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/spinkit.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.plugin.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="socket.io/socket.io.js"></script>
+		<script src="js/game/game.js"></script>
+	</head>
+	<body>
+		<div align="center">
+			<div id="title"></div>
+			<div id="show_prompt"></div>
+			<div id="drawing">
+				<div><canvas id="drawing_canvas" width="500" height="500" style="border:1px solid black"/></div>
+				<div><button id="btn_submit_drawing" class="btn btn-default">Submit</button></div>
+			</div>
+			<div id="lobby_drawn">Waiting for host to start the game.</div>
+			<div id="idle">DRAWFUL</div>
+			<div id="submitted">Thank you for your submission.</div>
+			<div id="write_title">
+				<p>Write a decoy title for this drawing.</p>
+				<input type="text" id="title_input" maxlength="60"/>
+				<button id="btn_submit_title" class="btn btn-default">Submit</button>
+			</div>
+			<div id="vote">
+				<div id="audience_likes"><p>Award a like to your favourite title!</p></div>
+				<div><button id="btn_vote1" class="btn btn-default"></button></div>
+				<div><button id="btn_vote2" class="btn btn-default"></button></div>
+				<div><button id="btn_vote3" class="btn btn-default"></button></div>
+				<div><button id="btn_vote4" class="btn btn-default"></button></div>
+				<div><button id="btn_vote5" class="btn btn-default"></button></div>
+				<div><button id="btn_vote6" class="btn btn-default"></button></div>
+				<div><button id="btn_vote7" class="btn btn-default"></button></div>
+				<div><button id="btn_vote8" class="btn btn-default"></button></div>
+			</div>
+			<div id="player_likes">
+				<p>Award likes to your favourite titles!</p>
+				<div id="player_like1">
+					<label id="label_check_player_like1" for="check_player_like1"></label>
+					<input type="checkbox" id="check_player_like1"/>
+				</div>
+				<div id="player_like2">
+					<label id="label_check_player_like2" for="check_player_like2"></label>
+					<input type="checkbox" id="check_player_like2"/>
+				</div>
+				<div id="player_like3">
+					<label id="label_check_player_like3" for="check_player_like3"></label>
+					<input type="checkbox" id="check_player_like3"/>
+				</div>
+				<div id="player_like4">
+					<label id="label_check_player_like4" for="check_player_like4"></label>
+					<input type="checkbox" id="check_player_like4"/>
+				</div>
+				<div id="player_like5">
+					<label id="label_check_player_like5" for="check_player_like5"></label>
+					<input type="checkbox" id="check_player_like5"/>
+				</div>
+				<div id="player_like6">
+					<label id="label_check_player_like6" for="check_player_like6"></label>
+					<input type="checkbox" id="check_player_like6"/>
+				</div>
+				<div id="player_like7">
+					<label id="label_check_player_like7" for="check_player_like7"></label>
+					<input type="checkbox" id="check_player_like7"/>
+				</div>
+				<div id="player_like8">
+					<label id="label_check_player_like8" for="check_player_like8"></label>
+					<input type="checkbox" id="check_player_like8"/>
+				</div>
+			</div>
+			<div id="my_prompt">You drew for this prompt.</div>
+			<div id="end">Thank you for playing!</div>
+		</div>
+	</body>
+</html>
